@@ -92,7 +92,7 @@ const PrebuiltPassword = () => {
     }
 
     return (
-        <div className="password-gen-container opacity-90">
+        <div className="password-gen-container opacity-90 text-white">
             <Link href="/generator" className="flex flex-row mt-7 md:mt-0"><IoMdArrowRoundBack className="text-2xl mr-2" />Return</Link>
             <h1 className="text-xl text-center md:text-3xl mt-20">Password generator prebuilt by you</h1>
             {generatedPassword && <div className="text-center p-4 text-lg md:text-xl text-green-300">{generatedPassword}</div>}
