@@ -18,7 +18,7 @@ const NavbarDesktop = () => {
                     <li className="h-12 navbar-border mb-4"><Link href="/frontend" className="block py-4">Front End Security</Link></li>
                 </ul>
                 <div className="absolute bottom-10 left-5 text-2xl font-bold">
-                    <h2>by maureS</h2>
+                    <h3 className="text-lg">maureS</h3>
                 </div>
             </div>
         </nav>
