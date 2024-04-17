@@ -33,7 +33,7 @@ const RandomPassword = () => {
   };
 
   return (
-    <div>
+    <div className="password-gen-container opacity-90">
       <Link href="/generator" className="flex flex-row mt-7 md:mt-0"><IoMdArrowRoundBack className="text-2xl mr-2" />Return</Link>
       <h1 className="text-3xl md:text-4xl text-center mt-20">Password generator</h1>
       <Form handleSubmit={handleSubmit} values={values} generatedPassword={generatedPassword} handleChange={handleChange} hasCharacterLength />

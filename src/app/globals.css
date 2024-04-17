@@ -56,6 +56,14 @@ body {
   background: linear-gradient(to right, #AD4EF0, #5E53F6, #5355FD);
 }
 
+.password-gen-container {
+  background-color: #23262d;
+  padding: 40px;
+  border: 1px solid transparent; 
+  border-image: linear-gradient(to right, #a845ef, #5145fb, #4345fd); 
+  border-image-slice: 1; 
+}
+
 .card-style {
   background-color: #23262d;
   padding: 10px;

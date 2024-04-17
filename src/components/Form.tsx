@@ -34,7 +34,7 @@ const Form: React.FC<FormProps> = ({ values, handleChange, handleSubmit, generat
             type="checkbox"
             checked={values.includeUpperCase}
             onChange={handleChange}
-            className="mb-7 md:mb-0"
+            className="mb-7 md:mb-0 cursor-pointer"
           />
         </div>
         <div>
@@ -45,6 +45,7 @@ const Form: React.FC<FormProps> = ({ values, handleChange, handleSubmit, generat
             type="checkbox"
             checked={values.includeLowerCase}
             onChange={handleChange}
+            className="cursor-pointer"
           />
         </div>
       </div>
@@ -58,7 +59,7 @@ const Form: React.FC<FormProps> = ({ values, handleChange, handleSubmit, generat
             type="checkbox"
             checked={values.includeNumber}
             onChange={handleChange}
-            className="ml-2 mb-7 md:mb-0"
+            className="ml-2 mb-7 md:mb-0 cursor-pointer"
           />
         </div>
         <div>
@@ -69,6 +70,7 @@ const Form: React.FC<FormProps> = ({ values, handleChange, handleSubmit, generat
             type="checkbox"
             checked={values.includeSymbols}
             onChange={handleChange}
+            className="cursor-pointer"
           />
         </div>
       </div>

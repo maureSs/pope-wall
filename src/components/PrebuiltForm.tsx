@@ -16,14 +16,14 @@ const PrebuiltForm: React.FC<PrebuiltFormProps> = ({ items, addText, generatePas
       </form>
 
       <form>
-        <div className="flex flex-col justify-center max-w-60 mx-auto mt-7 md:max-w-none md:ml-0 md:flex-row md:justify-around p-4 text-md md:text-lg" style={{ backgroundColor: '#23262d' }}>
+        <div className="flex flex-col justify-center max-w-60 mx-auto mt-7 md:max-w-none md:ml-0 md:flex-row md:justify-around p-4 text-md md:text-lg">
           <div className="pr-4">
             <label htmlFor="includeUpperCase">Include Uppercase </label>
             <input
               id="includeUpperCase"
               name="includeUpperCase"
               type="checkbox"
-              className="mb-7 md:mb-0"
+              className="mb-7 md:mb-0 cursor-pointer"
             />
           </div>
           <div>
@@ -32,18 +32,19 @@ const PrebuiltForm: React.FC<PrebuiltFormProps> = ({ items, addText, generatePas
               id="includeLowerCase"
               name="includeLowerCase"
               type="checkbox"
+              className="cursor-pointer"
             />
           </div>
         </div>
 
-        <div className="flex flex-col justify-center max-w-60 mx-auto md:max-w-none md:ml-0  md:flex-row md:justify-around p-4 mt-4 text-md md:text-lg" style={{ backgroundColor: '#23262d' }}>
+        <div className="flex flex-col justify-center max-w-60 mx-auto md:max-w-none md:ml-0  md:flex-row md:justify-around p-4 mt-4 text-md md:text-lg">
           <div className="pr-10">
             <label htmlFor="includeNumber" className="pr-2">Include Number</label>
             <input
               id="includeNumber"
               name="includeNumber"
               type="checkbox"
-              className="mb-7 md:mb-0"
+              className="mb-7 md:mb-0 cursor-pointer"
             />
           </div>
           <div>
@@ -52,6 +53,7 @@ const PrebuiltForm: React.FC<PrebuiltFormProps> = ({ items, addText, generatePas
               id="includeSymbols"
               name="includeSymbols"
               type="checkbox"
+              className="cursor-pointer"
             />
           </div>
         </div>
