@@ -52,7 +52,7 @@ const Form: React.FC<FormProps> = ({ values, handleChange, handleSubmit, generat
 
       <div className="flex flex-col justify-center items-center max-w-60 mx-auto p-4 md:mt-4 text-md md:max-w-none md:ml-0 md:flex-row md:justify-around md:text-lg" style={{ backgroundColor: '#23262d' }}>
         <div className="pr-1 md:pr-10">
-          <label htmlFor="includeNumber">Include Number</label>
+          <label htmlFor="includeNumber">Include Number </label>
           <input
             id="includeNumber"
             name="includeNumber"

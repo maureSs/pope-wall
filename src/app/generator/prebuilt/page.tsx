@@ -61,7 +61,7 @@ const PrebuiltPassword = () => {
             setPasswordSecurity('Very Strong');
         } else if (containsUpperCase && containsLowerCase && containsNumber && containsSymbol && generatedPassword.length > 12) {
             setPasswordSecurity('Strong');
-        } else if (containsUpperCase && containsNumber && containsSymbol && generatedPassword.length > 10) {
+        } else if (containsNumber && containsUpperCase && generatedPassword.length > 10) {
             setPasswordSecurity('Medium');
         } else {
             setPasswordSecurity('Weak');

@@ -63,7 +63,7 @@ const PrebuiltForm: React.FC<PrebuiltFormProps> = ({ items, addText, generatePas
             />
           </div>
           <div>
-            <label htmlFor="includeSymbols">Include Symbols </label>
+            <label htmlFor="includeSymbols">Include Symbol </label>
             <input
               id="includeSymbols"
               name="includeSymbols"
