@@ -10,10 +10,6 @@ const PrebuiltPassword = () => {
     const [items, setItems] = useState<string[]>([])
     const [generatedPassword, setGeneratedPassword] = useState<string>("");
     const [passwordSecurity, setPasswordSecurity] = useState<string>('');
-    const [includeUpperCase, setIncludeUpperCase] = useState(false);
-    const [includeLowerCase, setIncludeLowerCase] = useState(false);
-    const [includeNumber, setIncludeNumber] = useState(false);
-    const [includeSymbols, setIncludeSymbols] = useState(false);
     const [data, setData] = useState<Tip[]>(password_tips)
     const [isModalOpen, setModalOpen] = useState(false);
 
@@ -63,11 +59,11 @@ const PrebuiltPassword = () => {
         const containsNumber = /[0-9]/.test(generatedPassword);
         const containsSymbol = /[@$*=/,.\-_?]/.test(generatedPassword);
 
-        if (containsUpperCase && containsLowerCase && containsNumber && containsSymbol && generatedPassword.length > 20) {
+        if (containsUpperCase && containsLowerCase && containsNumber && containsSymbol && generatedPassword.length > 18) {
             setPasswordSecurity('Very Strong');
-        } else if (containsUpperCase && containsLowerCase && containsNumber && containsSymbol && generatedPassword.length > 15) {
+        } else if (containsUpperCase && containsLowerCase && containsNumber && containsSymbol && generatedPassword.length > 12) {
             setPasswordSecurity('Strong');
-        } else if (containsUpperCase && containsNumber && containsSymbol && generatedPassword.length > 12) {
+        } else if (containsUpperCase && containsNumber && containsSymbol && generatedPassword.length > 10) {
             setPasswordSecurity('Medium');
         } else {
             setPasswordSecurity('Weak');

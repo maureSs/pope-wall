@@ -2,7 +2,7 @@ import { home_information } from "@/data/data";
 
 export default function Home() {
   return (
-    <main className="text-center">
+    <main className="text-center text-white">
       <h2 className="text-4xl md:text-5xl p-7 font-bold">{home_information.title}</h2>
       <div className="mb-14">
         <h4 className="text-xl md:text-2xl">{home_information.subtitle}</h4>
