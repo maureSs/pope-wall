@@ -1,15 +1,13 @@
 'use client'
-import Link from 'next/link';
 import PrebuiltForm from '@/components/PrebuiltForm';
 import { useState, useEffect, FormEvent } from 'react'
 import { password_tips } from '../../../data/data'
-import { Tip } from '@/types/types'
-import { IoMdArrowRoundBack } from "react-icons/io";
+import { Tip, PrebuiltFormProps } from '@/types/types'
 
 const PrebuiltPassword = () => {
     const [items, setItems] = useState<string[]>([])
-    const [generatedPassword, setGeneratedPassword] = useState<string>("");
-    const [passwordSecurity, setPasswordSecurity] = useState<string>('');
+    const [generatedPassword, setGeneratedPassword] = useState<PrebuiltFormProps['generatedPassword']>("");
+    const [passwordSecurity, setPasswordSecurity] = useState<PrebuiltFormProps['passwordSecurity']>('');
     const [data, setData] = useState<Tip[]>(password_tips)
     const [isModalOpen, setModalOpen] = useState(false);
 
@@ -89,20 +87,7 @@ const PrebuiltPassword = () => {
 
     return (
         <div className="password-gen-container opacity-90 text-white">
-            <Link href="/generator" className="flex flex-row mt-7 md:mt-0"><IoMdArrowRoundBack className="text-2xl mr-2" />Return</Link>
-            <h1 className="text-xl text-center md:text-3xl mt-20">Password generator prebuilt by you</h1>
-            {generatedPassword && <div className="text-center p-4 text-lg md:text-xl text-green-300">{generatedPassword}</div>}
-            {generatedPassword &&
-                <div className="text-center p-4 text-md md:text-xl text-green-300">
-                    {
-                        passwordSecurity === 'Weak' ? <p className="text-red-400">{passwordSecurity}</p>
-                            : passwordSecurity === 'Medium' ?
-                                <p className="text-orange-400">{passwordSecurity}</p>
-                                : <p className="text-green-600">{passwordSecurity}</p>
-                    }
-                </div>
-            }
-            <PrebuiltForm addText={addText} items={items} generatePassword={generatePassword} />
+            <PrebuiltForm addText={addText} items={items} generatePassword={generatePassword} generatedPassword={generatedPassword} passwordSecurity={passwordSecurity} />
             <button onClick={openModal} className="learn-more-button mt-7 mb-7 ml-4 md:mb-0 md:ml-0">How to build a strong password</button>
             {isModalOpen && (
                 <div className="modal-overlay">

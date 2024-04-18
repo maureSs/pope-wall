@@ -1,5 +1,5 @@
 'use client'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { frontend_tips } from '../../data/data'
 
 const FrontendSecurity = () => {
@@ -18,6 +18,10 @@ const FrontendSecurity = () => {
     const selectCard = (index: number) => {
         setActiveTab(index)
     }
+
+    useEffect(() => {
+        setSelectedTipIndex(null);
+    }, [activeTab])
 
     return (
         <main className="grid grid-cols-1 gap-2 mt-7 ml-7 mb-7 md:mb-0 md:ml-0 md:mt-0 md:grid-cols-3 md:gap-4 md:w-4/5">

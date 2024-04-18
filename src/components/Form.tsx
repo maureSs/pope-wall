@@ -25,8 +25,8 @@ const Form: React.FC<FormProps> = ({ values, handleChange, handleSubmit, generat
         }
       </div>
 
-      <div className="flex flex-col justify-center max-w-60 mx-auto md:max-w-none md:ml-0 md:flex-row md:justify-around p-4 text-md md:text-lg" style={{ backgroundColor: '#23262d' }}>
-        <div className="pr-4">
+      <div className="flex flex-col justify-center items-center max-w-60 mx-auto md:max-w-none md:ml-0 md:flex-row md:justify-around p-4 text-md md:text-lg" style={{ backgroundColor: '#23262d' }}>
+        <div className="md:pr-4">
           <label htmlFor="includeUpperCase">Include UpperCase </label>
           <input
             id="includeUpperCase"
@@ -50,8 +50,8 @@ const Form: React.FC<FormProps> = ({ values, handleChange, handleSubmit, generat
         </div>
       </div>
 
-      <div className="flex flex-col justify-center max-w-60 mx-auto md:max-w-none md:ml-0  md:flex-row md:justify-around p-4 mt-4 text-md md:text-lg" style={{ backgroundColor: '#23262d' }}>
-        <div className="pr-10">
+      <div className="flex flex-col justify-center items-center max-w-60 mx-auto p-4 md:mt-4 text-md md:max-w-none md:ml-0 md:flex-row md:justify-around md:text-lg" style={{ backgroundColor: '#23262d' }}>
+        <div className="pr-1 md:pr-10">
           <label htmlFor="includeNumber">Include Number</label>
           <input
             id="includeNumber"

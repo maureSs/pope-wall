@@ -21,6 +21,8 @@ export interface PrebuiltFormProps {
   items: string[];
   addText: (e: FormEvent<HTMLFormElement>) => void;
   generatePassword: () => void;
+  generatedPassword: string;
+  passwordSecurity: string;
 }
 
 export interface Tip {
